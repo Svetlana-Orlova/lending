@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Frispes</title>
+  <link rel="preload" href="css/styles.min.css" as="style">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Lora:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="page-body">
+  <header class="page-header container">
+    <a class="page-header__logo logo" href="#">
+      Frispes.
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Home
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#workspace">Workspace
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#service">Service
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#events">Events
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#reviwes">Reviews
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#contacts">Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__wrapper">
+      <button class="page-header__button button log-in" type="button">Log In</button>
+      <button class="page-header__button button sign-up" type="button">Sign Up</button>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Frispes</h1>
+    <section class="intro container">
+      <h2 class="intro__title">Introducing</h2>
+      <div class="intro__wrapper">
+        <h3 class="intro__subtitle"><span class="intro__subtitle-word">Revolutionary</span> co-working space to realize your innovation</h3>
+        <p class="intro__description">In frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow their opportunities in key local, regional and global markets</p>
+      </div>
+      <div class="intro__slider">
+        <input class="intro__radio1" type="radio" id="intro__btn-1" name="intro__toggle" checked>
+        <input class="intro__radio2" type="radio" id="intro__btn-2" name="intro__toggle">
+        <input class="intro__radio3" type="radio" id="intro__btn-3" name="intro__toggle">
+        <input class="intro__radio4" type="radio" id="intro__btn-4" name="intro__toggle">
+        <div class="intro__slider-controls controls">
+          <label for="intro__btn-1"></label>
+          <label for="intro__btn-2"></label>
+          <label for="intro__btn-3"></label>
+          <label for="intro__btn-4"></label>
+        </div>
+        <div class="intro__slider-inner">
+          <div class="intro__slider-slides">
+            <ul class="intro__slider-list">
+              <li class="intro__slider-item intro__slider-item-current intro__slider-item-1">
+                <picture>
+                  <source type="image/webp" srcset="img/slider-1.webp 1x, img/slider-1@2x.webp 2x">
+                  <img class="intro__slider-img" src="img/slider-1.jpg" srcset="img/slider-1@2x.jpg 2x" width="300" alt="Space-1">
+                </picture>
+              </li>
+              <li class="intro__slider-item intro__slider-item-2">
+                <picture>
+                  <source type="image/webp" srcset="img/slider-2.webp 1x, img/slider-2@2x.webp 2x">
+                  <img class="intro__slider-img slider-2-img" src="img/slider-2.jpg" srcset="img/slider-2@2x.jpg 2x" width="300" alt="Space-2">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="spaces container">
+      <a class="visually-hidden" id="workspace"></a>
+      <div class="spaces__wrapper1">
+        <h2 class="spaces__title">Our Spaces</h2>
+        <p class="spaces__description">Our space is designed to give you a different experience when working with your team or personally</p>
+        <div class="spaces__wrapper2">
+          <button class="spaces__arrow-left button prev">
+            <svg width="53" height="26">
+              <use xlink:href="../img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+          <button class="spaces__arrow-right button next">
+            <svg width="92" height="26">
+              <use xlink:href="../img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="spaces__slider">
+        <input class="spaces__radio1" type="radio" id="spaces__btn-1" name="spaces__toggle" checked>
+        <input class="spaces__radio2" type="radio" id="spaces__btn-2" name="spaces__toggle">
+        <input class="spaces__radio3" type="radio" id="spaces__btn-3" name="spaces__toggle">
+        <input class="spaces__radio4" type="radio" id="spaces__btn-4" name="spaces__toggle">
+        <div class="spaces__slider-controls controls">
+          <label for="spaces__btn-1"></label>
+          <label for="spaces__btn-2"></label>
+          <label for="spaces__btn-3"></label>
+          <label for="spaces__btn-4"></label>
+        </div>
+        <div class="spaces__slider-inner">
+          <div class="spaces__slider-slides">
+            <ul class="spaces__slider-list">
+              <li class="spaces__slider-item">
+                <a class="spaces__link" href="#" data-name="Working with team">
+                  <picture>
+                    <source type="image/webp" srcset="img/space-1.webp 1x, img/space-1@2x.webp 2x">
+                    <img class="spaces__card-img" src="img/space-1.jpg" srcset="img/space-1@2x.jpg 2x" width="300" alt="Space for teem">
+                  </picture>
+                  <div class="spaces__avaibility">Check avaibility</div>
+                  <h3 class="spaces__card-subtitle">Working with team</h3>
+                </a>
+              </li>
+              <li class="spaces__slider-item spaces__slider-item--focus">
+                <a class="spaces__link" href="#">
+                  <h3 class="spaces__card-subtitle">Private Space</h3>
+                  <p class="spaces__card-description">Comfortable space, Full speed <br>wifi, Free coffe & Snack <br>and many more</p>
+                  <div class="spaces__avaibility">Check avaibility</div>
+                </a>
+              </li>
+              <li class="spaces__slider-item">
+                <a class="spaces__link" href="#" data-name="Custom Office">
+                  <picture>
+                    <source type="image/webp" srcset="img/space-3.webp 1x, img/space-3@2x.webp 2x">
+                    <img class="spaces__card-img" src="img/space-3.jpg" srcset="img/space-3@2x.jpg 2x" width="300" alt="Custom office">
+                  </picture>
+                  <div class="spaces__avaibility">Check avaibility</div>
+                  <h3 class="spaces__card-subtitle">Custom Office</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="spaces-paginator"><span class="spaces-paginator__page">01<small>&#47;</small></span>04</div>
+      </div>
+    </section>
+    <section class="arguments container">
+      <div class="arguments__wrapper-1">
+        <ul class="arguments__list">
+          <li class="arguments__item arguments__item--meeting-rooms">
+            <span class="arguments__number">500+</span>
+            <p class="arguments__description">Meeting rooms</p>
+          </li>
+          <li class="arguments__item arguments__item--event-spaces">
+            <span class="arguments__number">100+</span>
+            <p class="arguments__description">Event spaces</p>
+          </li>
+          <li class="arguments__item arguments__item--countries">
+            <span class="arguments__number">60+</span>
+            <p class="arguments__description">Countries</p>
+          </li>
+          <li class="arguments__item arguments__item--internet-speed">
+            <span class="arguments__number">500 Mbps</span>
+            <p class="arguments__description">Internet speed</p>
+          </li>
+          <li class="arguments__item arguments__item--mentors">
+            <span class="arguments__number">5K+</span>
+            <p class="arguments__description">Startup mentors</p>
+          </li>
+          <li class="arguments__item arguments__item--communities">
+            <span class="arguments__number">200+</span>
+            <p class="arguments__description">Communities inside</p>
+          </li>
+        </ul>
+      </div>
+      <div class="arguments__wrapper-2">
+        <h2 class="arguments__title">Why Frispes</h2>
+        <h3 class="arguments__subtitle">We revolutionize your workspace</h3>
+        <p class="arguments__extradescription">With a decade of insights and expertise, we're decided to reimagine co-working space, designed to help a new startup grow up and realize their ideas so they can give a positive impacts on&nbsp;&nbsp;&nbsp; many people</p>
+      </div>
+    </section>
+    <section class="facilities container">
+      <a class="visually-hidden" id="service"></a>
+      <h2 class="facilities__title">Our Facilities</h2>
+      <h3 class="facilities__subtitle">All facilities are designed to meet all your needs</h3>
+      <div class="facilities__wrapper">
+        <ul class="facilities__list">
+          <li class="facilities__item">
+            <a class="facilities__link" href="">Spacious parking area</a>
+          </li>
+          <li class="facilities__item">
+            <a class="facilities__link" href="">Comfortable spaces</a>
+          </li>
+          <li class="facilities__item facilities__item---current">
+            <a class="facilities__link" href="">Cozy cafe</a>
+          </li>
+          <li class="facilities__item">
+            <a class="facilities__link" href="">Child playground</a>
+          </li>
+          <li class="facilities__item">
+            <a class="facilities__link" href="">Outdoor spaces</a>
+          </li>
+        </ul>
+        <picture>
+          <source type="image/webp" srcset="img/facilities.webp 1x, img/facilities@2x.webp 2x">
+          <img class="facilities__img" src="img/facilities.jpg" srcset="img/facilities@2x.jpg 2x" width="300" alt="Cozy cafe">
+        </picture>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery__wrapper1 container">
+        <h2 class="gallery__title">Frispes gallery</h2>
+        <p class="gallery__description">Immersive beautiful co&#8209;working space gallery</p>
+        <div class="gallery__wrapper2">
+          <button class="gallery__arrow-left button prev">
+            <svg width="53" height="26">
+              <use xlink:href="../img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+          <button class="gallery__arrow-right button next">
+            <svg width="92" height="26">
+              <use xlink:href="../img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="gallery__slider">
+        <div class="gallery__slider-inner">
+          <div class="gallery__slider-slides">
+            <ul class="gallery__slider-list">
+              <li class="gallery__slider-item">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery-1.webp 1x, img/gallery-1@2x.webp 2x">
+                  <img class="gallery__img" src="img/gallery-1.jpg" srcset="img/gallery-1@2x.jpg 2x" width="300" alt="First picture of gallery ">
+                </picture>
+              </li>
+              <li class="gallery__slider-item">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery-2.webp 1x, img/gallery-2@2x.webp 2x">
+                  <img class="gallery__img" src="img/gallery-2.jpg" srcset="img/gallery-2@2x.jpg 2x" width="300" alt="Second picture of gallery ">
+                </picture>
+              </li>
+              <li class="gallery__slider-item">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery-3.webp 1x, img/gallery-3@2x.webp 2x">
+                  <img class="gallery__img" src="img/gallery-3.jpg" srcset="img/gallery-3@2x.jpg 2x" width="300" alt="Third picture of gallery ">
+                </picture>
+              </li>
+              <li class="gallery__slider-item">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery-4.webp 1x, img/gallery-4@2x.webp 2x">
+                  <img class="gallery__img" src="img/gallery-4.jpg" srcset="img/gallery-4@2x.jpg 2x" width="300" alt="Fourth picture of gallery ">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="users">
+      <h2 class="users__title">Who uses Frispes?</h2>
+      <p class="users__description">Big brands, small bussiness, new startuo and inividuals</p>
+      <ul class="users__list">
+        <li class="users__item">
+          <svg width="120" height="40">
+            <use xlink:href="../img/sprite.svg#google"></use>
+          </svg>
+        </li>
+        <li class="users__item">
+          <svg width="180" height="40">
+            <use xlink:href="../img/sprite.svg#tokopedia"></use>
+          </svg>
+        </li>
+        <li class="users__item">
+          <svg width="120" height="35">
+            <use xlink:href="../img/sprite.svg#upwork"></use>
+          </svg>
+        </li>
+        <li class="users__item">
+          <svg width="170" height="36">
+            <use xlink:href="../img/sprite.svg#microsoft"></use>
+          </svg>
+        </li>
+        <li class="users__item">
+          <svg width="146" height="46">
+            <use xlink:href="../img/sprite.svg#shopify"></use>
+          </svg>
+        </li>
+        <li class="users__item">
+          <svg width="108" height="45">
+            <use xlink:href="../img/sprite.svg#stripe"></use>
+          </svg>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <a class="visually-hidden" id="reviwes"></a>
+      <div class="reviews__header container">
+        <h2 class="reviews__title">Reviews</h2>
+        <div class="reviews__subcontainer">
+          <p class="reviews__description">What our customers are saying</p>
+          <div class="reviews__wrapper">
+            <button class="reviews__arrow-left button prev">
+              <svg width="53" height="26">
+                <use xlink:href="../img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="reviews__arrow-right button next">
+              <svg width="92" height="26">
+                <use xlink:href="../img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__slider">
+        <input class="reviews__radio1" type="radio" id="reviews__btn-1" name="reviews__toggle" checked>
+        <input class="reviews__radio2" type="radio" id="reviews__btn-2" name="reviews__toggle">
+        <input class="reviews__radio3" type="radio" id="reviews__btn-3" name="reviews__toggle">
+        <input class="reviews__radio4" type="radio" id="reviews__btn-4" name="reviews__toggle">
+        <div class="reviews__slider-controls controls">
+          <label for="reviews__btn-1"></label>
+          <label for="reviews__btn-2"></label>
+          <label for="reviews__btn-3"></label>
+          <label for="reviews__btn-4"></label>
+        </div>
+        <div class="reviews__slider-inner">
+          <div class="reviews__slider-slides">
+            <ul class="reviews__slider-list">
+              <li class="reviews__slider-item">
+                <figure class="reviews__slider-quote">
+                  <blockquote class="reviews__slider-text">
+                    Our team has been working at frispes for almost 2 months because our office still closed. During working at frispes, we feel a new experience, we can feel working with a beautiful, modern, and comfortable space. And cozy cafe with high-speed internet  in there. Thank you for frispes and team.
+                  </blockquote>
+                  <figcaption class="reviews__slider-caption">
+                    <picture>
+                      <source type="image/webp" srcset="img/pedro.webp 1x, img/pedro@2x.webp 2x">
+                      <img class="reviews__img" src="img/pedro.png" srcset="img/pedro@2x.png 2x" width="56" height="56" alt="Pedro Ibanez">
+                    </picture>
+                    <p class="reviews__slider-name">
+                      Pedro Ibanez
+                      <span class="reviews__slider-profession">UI Designer at Google</span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="reviews__slider-item">
+                <figure class="reviews__slider-quote">
+                  <blockquote class="reviews__slider-text">
+                    The high-speed internet at frispes was so amazing. I can get best experience when running video call with my clients. Frispes has spacious and safe parking area, that’s what i need because i used to work as freelancer for a long time.
+                  </blockquote>
+                  <figcaption class="reviews__slider-caption">
+                    <picture>
+                      <source type="image/webp" srcset="img/raymond.webp 1x, img/raymond@2x.webp 2x">
+                      <img class="reviews__img" src="img/raymond.png" srcset="img/raymond@2x.png 2x" width="56" height="56" alt="Raymond Thual">
+                    </picture>
+                    <p class="reviews__slider-name">
+                      Raymond Thual
+                      <span class="reviews__slider-profession">Professional Freelancer</span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="reviews__slider-item">
+                <figure class="reviews__slider-quote">
+                  <blockquote class="reviews__slider-text">
+                    Just three words : Frispes is Awesome!
+                  </blockquote>
+                  <figcaption class="reviews__slider-caption">
+                    <picture>
+                      <source type="image/webp" srcset="img/yuli.webp 1x, img/yuli@2x.webp 2x">
+                      <img class="reviews__img" src="img/yuli.png" srcset="img/yuli@2x.png 2x" width="56" height="56" alt="Yuli Berlian">
+                    </picture>
+                    <p class="reviews__slider-name">
+                      Yuli Berlian
+                      <span class="reviews__slider-profession">IOS Dev at Tokopedia</span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq container">
+      <a class="visually-hidden" id="faq"></a>
+      <h2 class="visually-hidden">FAQ</h2>
+      <h3 class="faq__description">Find the answers to anything you need in our Help Center</h3>
+      <ul class="faq__list">
+        <li class="faq__item">
+          <a class="faq__link" href="">
+            <p class="faq__question">How do I know if a space is available?</p>
+          </a>
+        </li>
+        <li class="faq__item">
+          <a class="faq__link" href="">
+            <p class="faq__question">How do I book a space?</p>
+          </a>
+        </li>
+        <li class="faq__item">
+          <a class="faq__link" href="">
+            <p class="faq__question">How do reviews work?</p>
+          </a>
+        </li>
+      </ul>
+      <a class="faq__button button" href="">More questions</a>
+    </section>
+    <section class="news">
+      <a class="visually-hidden" id="events"></a>
+      <div class="news__container container">
+        <div class="news__header">
+          <h2 class="news__title">News, events and insights for you</h2>
+          <a class="news__button button" href="">See more</a>
+        </div>
+        <ul class="news__list">
+          <li class="news__item">
+            <a class="news__link" href="">
+              <picture>
+                <source type="image/webp" srcset="img/news-1.webp 1x, img/news-1@2x.webp 2x">
+                <img class="news__img news__img--big" src="img/news-1.jpg" srcset="img/news-1@2x.jpg 2x" width="300" alt="Presentation">
+              </picture>
+              <div class="news__wrapper">
+                <h3 class="news__subtitle news__subtitle--big">Google I / O 2020 news update</h3>
+                <p class="news__description">Out of concern for the health and safety of our developers, employees, and local communities — and in line with recent ...</p>
+                <div class="news__author">
+                  <picture>
+                    <source type="image/webp" srcset="img/author.webp 1x, img/author@2x.webp 2x">
+                    <img class="news__author-img" src="img/author.jpg" srcset="img/author@2x.jpg 2x" width="56" height="56" alt="Sundar Pichai">
+                  </picture>
+                  <p class="news__author-name news__author-name--sundar">
+                    Sundar Pichai
+                    <span class="news__author-profession">CEO at Google</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="">
+              <picture>
+                <source type="image/webp" srcset="img/news-2.webp 1x, img/news-2@2x.webp 2x">
+                <img class="news__img" src="img/news-2.jpg" srcset="img/news-2@2x.jpg 2x" width="300" alt="Minimal workspace">
+              </picture>
+              <div class="news__wrapper">
+                <h3 class="news__subtitle">Minimal workspace for inspirations</h3>
+                <p class="news__author-name">Anthony Masional</p>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="">
+              <picture>
+                <source type="image/webp" srcset="img/news-3.webp 1x, img/news-3@2x.webp 2x">
+                <img class="news__img" src="img/news-3.jpg" srcset="img/news-3@2x.jpg 2x" width="300" alt="The reading person">
+              </picture>
+              <div class="news__wrapper">
+                <h3 class="news__subtitle">Does productivity increase when working remotely ? </h3>
+                <p class="news__author-name">Franck Martin</p>
+              </div>
+            </a>
+          </li>
+          <li class="news__item news__item--focus">
+            <a class="news__link" href="">
+              <picture>
+                <source type="image/webp" srcset="img/news-4.webp 1x, img/news-4@2x.webp 2x">
+                <img class="news__img" src="img/news-4.jpg" srcset="img/news-4@2x.jpg 2x" width="300" alt="Discussion with teem">
+              </picture>
+              <div class="news__wrapper">
+                <h3 class="news__subtitle">Morning routine to boost your mood</h3>
+                <p class="news__author-name">Elizabeth Swan</p>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="">
+              <picture>
+                <source type="image/webp" srcset="img/news-5.webp 1x, img/news-5@2x.webp 2x">
+                <img class="news__img" src="img/news-5.jpg" srcset="img/news-5@2x.jpg 2x" width="300" alt="Co-working space">
+              </picture>
+              <div class="news__wrapper">
+                <h3 class="news__subtitle">5+ tips to find comfortable co&#8209;working space</h3>
+                <p class="news__author-name">Mykola Ilschenko</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <section class="about-us">
+        <h2 class="about-us__title">
+          <a class="about-us__title-link" href="#">Frispes</a>
+        </h2>
+        <p class="about-us__description">We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your best workspaces and meetings</p>
+        <ul class="about-us__social-list">
+          <li class="about-us__social-item">
+            <a class="about-us__social-link" href="">
+              <svg width="24" height="24">
+                <use xlink:href="../img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="about-us__social-item">
+            <a class="about-us__social-link" href="">
+              <svg width="24" height="24">
+                <use xlink:href="../img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="about-us__social-item">
+            <a class="about-us__social-link" href="">
+              <svg width="24" height="24">
+                <use xlink:href="../img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__spaces page-footer__section">
+        <h2 class="page-footer__spaces-title page-footer__title">Spaces</h2>
+        <ul class="page-footer__spaces-list page-footer__list">
+          <li class="page-footer__spaces-item page-footer__item">
+            <a href="" class="page-footer__spaces-link page-footer__link">Co-working spaces</a>
+          </li>
+          <li class="page-footer__spaces-item page-footer__item">
+            <a href="" class="page-footer__spaces-link page-footer__link">Meeting rooms</a>
+          </li>
+          <li class="page-footer__spaces-item page-footer__item">
+            <a href="" class="page-footer__spaces-link page-footer__link page-footer__link--hover" >Event spaces</a>
+          </li>
+          <li class="page-footer__spaces-item page-footer__item">
+            <a href="" class="page-footer__spaces-link page-footer__link">Child playground</a>
+          </li>
+          <li class="page-footer__spaces-item page-footer__item">
+            <a href="" class="page-footer__spaces-link page-footer__link">Cafe & resto</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__company page-footer__section">
+        <h2 class="page-footer__company-title page-footer__title">Company</h2>
+        <ul class="page-footer__company-list page-footer__list">
+          <li class="page-footer__company-item page-footer__item">
+            <a class="page-footer__company-link page-footer__link" href="">About us</a>
+          </li>
+          <li class="page-footer__company-item page-footer__item">
+            <a class="page-footer__company-link page-footer__link" href="">Pricing</a>
+          </li>
+          <li class="page-footer__company-item page-footer__item">
+            <a class="page-footer__company-link page-footer__link" href="">Careers</a>
+          </li>
+          <li class="page-footer__company-item page-footer__item">
+            <a class="page-footer__company-link page-footer__link" href="">Press</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__support page-footer__section">
+        <h2 class="page-footer__support-title page-footer__title">Support</h2>
+        <ul class="page-footer__support-list page-footer__list">
+          <li class="page-footer__support-item page-footer__item">
+            <a class="page-footer__support-link page-footer__link" href="#faq">FAQs</a>
+          </li>
+          <li class="page-footer__support-item page-footer__item">
+            <a class="page-footer__support-link page-footer__link" href="">Privacy Policy</a>
+          </li>
+          <li class="page-footer__support-item page-footer__item">
+            <a class="page-footer__support-link page-footer__link" href="">Help</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__contacts page-footer__section">
+        <a class="visually-hidden" id="contacts"></a>
+        <h2 class="page-footer__contacts-title page-footer__title">Contact us</h2>
+        <ul class="page-footer__contacts-list page-footer__list">
+          <li class="page-footer__contacts-item page-footer__item">
+            <a class="page-footer__contacts-link page-footer__link" href="mailto:Hello@frispes.com">E. Hello@frispes.com</a>
+          </li>
+          <li class="page-footer__contacts-item page-footer__item">
+            <a class="page-footer__contacts-link page-footer__link" href="https://www.google.com/maps/place/Jl.+Jayakatwang,+Kunir,+Bulupasar,+Kec.+Ngasem,+Kediri,+Jawa+Timur,+%D0%98%D0%BD%D0%B4%D0%BE%D0%BD%D0%B5%D0%B7%D0%B8%D1%8F/@-7.7947138,112.0642877,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7859f3f6bc7585:0x6512ed7fd3601e80!8m2!3d-7.7947138!4d112.0664764">
+              A. Jalan Jayakatwang No.301 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ngasem, Kediri</a>
+          </li>
+          <li class="page-footer__contacts-item page-footer__item">
+            <a class="page-footer__contacts-link page-footer__link" href="tel:+6282334670000">P. (+62) 82334670000</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

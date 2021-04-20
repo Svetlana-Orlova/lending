@@ -1,0 +1,137 @@
+.intro {
+  margin-top: 56px;
+}
+
+.intro__title {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: @black3;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 73px;
+    height: 2px;
+    background-color: @black3;
+    top: 16px;
+    left: 115px;
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.intro__subtitle {
+  font-family: "Lora", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: @blue;
+  max-width: 667px;
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 52px;
+    line-height: 67px;
+  }
+}
+
+.intro__subtitle-word {
+  color: @orange2;
+}
+
+.intro__description {
+  font-weight: 500;
+  font-size: 20px;
+  color: @black2;
+  max-width: 382px;
+  flex-grow: 1;
+}
+
+.intro__slider {
+  position: relative;
+}
+
+.intro__slider-slides {
+  overflow: hidden;
+}
+
+.intro__slider-list {
+  width: 400%;
+  display: flex;
+  flex-wrap: no-wrap;
+  transition: transform 0.7s ease;
+}
+
+.intro__slider-item {
+  margin: 0;
+  width: 25%;
+}
+
+.intro__slider-controls {
+  position: absolute;
+  bottom: 6.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.controls {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.slider-2-img {
+  width: 75%;
+}
+
+.intro__slider input[type="radio"] {
+  display: none;
+}
+
+.intro__slider-controls label {
+  padding: 0;
+  width: 16px;
+  height: 4px;
+  background: @white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.intro__radio1:checked ~ .intro__slider-controls label[for="intro__btn-1"],
+.intro__radio2:checked ~ .intro__slider-controls label[for="intro__btn-2"],
+.intro__radio3:checked ~ .intro__slider-controls label[for="intro__btn-3"],
+.intro__radio4:checked ~ .intro__slider-controls label[for="intro__btn-4"] {
+  width: 40px;
+  background: @orange;
+  opacity: 1;
+}
+
+.intro__radio1:checked ~ .intro__slider-inner .intro__slider-list {
+  transform: translate(0);
+}
+
+.intro__radio2:checked ~ .intro__slider-inner .intro__slider-list {
+  transform: translate(-25%);
+}
+
+.intro__radio3:checked ~ .intro__slider-inner .intro__slider-list {
+  transform: translate(-50%);
+}
+
+.intro__radio4:checked ~ .intro__slider-inner .intro__slider-list {
+  transform: translate(-75%);
+}

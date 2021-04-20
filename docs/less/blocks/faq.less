@@ -1,0 +1,121 @@
+.faq {
+  margin-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 112px;
+  }
+}
+
+.faq__description {
+  font-family: "Lora", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+  color: @blue;
+  max-width: 578px;
+  margin: 0 auto;
+}
+
+.faq__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.faq__item {
+  padding: 20px 20px 25px;
+  margin: 0 auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px 4px rgba(223, 223, 223, 0.5);
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 40px 0;
+    max-width: 350px;
+    min-height: 171px;
+  }
+}
+
+.faq__question {
+  font-family: "Lora", "Times New Roman", serif;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  color: @black;
+}
+
+.faq__item:nth-child(2n) {
+  background-color: @orange;
+  box-shadow: none;
+}
+
+.faq__item:nth-child(2n) .faq__question {
+  color: @white;
+}
+
+.faq__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -75px;
+    left: 50%;
+    width: 64px;
+    height: 48px;
+    background-color: @orange;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+    transform: translateX(-50%);
+    box-shadow: -2px 0 24px 5px rgba(223, 223, 223, 0.7);
+
+    @media (min-width: @tablet-width) {
+      bottom: -70px;
+    }
+  }
+}
+
+.faq__item:nth-child(2n) .faq__link::after {
+  background-color: @white;
+  background-image: url("../img/tick1.svg");
+  box-shadow: -4px 0 24px 0 rgba(221, 44, 0, 0.24);
+}
+
+.faq__button {
+  margin: 38px auto 0;
+  font-size: 16px;
+  width: 150px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 18px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/tick1.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transform: rotate(-90deg);
+  }
+}

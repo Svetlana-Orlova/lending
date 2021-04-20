@@ -1,0 +1,135 @@
+.gallery {
+  margin-top: 60px;
+  position: relative;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 112px;
+  }
+}
+
+.gallery__wrapper2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 168px;
+  margin-top: 38px;
+  z-index: 8;
+
+  @media (min-width: 1078px) {
+    margin-left: auto;
+    width: 496px;
+    justify-content: flex-start;
+  }
+}
+
+.gallery__arrow-right,
+.gallery__arrow-left {
+  z-index: 8;
+}
+
+.gallery__arrow-right {
+  @media (min-width: 1078px) {
+    margin-left: 23px;
+  }
+}
+
+.gallery__title {
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  color: @black3;
+  text-align: left;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 73px;
+    height: 2px;
+    background-color: @black3;
+    top: 16px;
+    left: 135px;
+  }
+
+  @media (min-width: 1078px) {
+    margin-left: auto;
+    width: 496px;
+  }
+}
+
+.gallery__description {
+  font-family: "Lora", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 51px;
+  color: @blue;
+  max-width: 496px;
+  margin: 0;
+  margin-top: 8px;
+  text-align: left;
+
+  @media (min-width: 1078px) {
+    margin-left: auto;
+  }
+}
+
+.gallery__slider {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.gallery__slider-inner {
+  margin-top: 30px;
+
+  @media (min-width: 1078px) {
+    margin-top: -180px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-top: -200px;
+  }
+}
+
+.gallery__slider-slides {
+  overflow: hidden;
+}
+
+.gallery__slider-list {
+  width: 200%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: transform 0.7s ease;
+
+  @media (min-width: 500px) {
+    width: 150%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.gallery__slider-item {
+  margin: 0;
+  flex-basis: 1;
+  position: relative;
+  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 445px;
+  }
+}
+
+.gallery__slider-item:nth-child(2) {
+  flex-basis: 1.5;
+}
+
+.gallery__slider-item:first-child {
+  margin-left: 0;
+}

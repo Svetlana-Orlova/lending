@@ -1,0 +1,93 @@
+.page-footer {
+  background-color: @dark-blue;
+  color: @white;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  align-items: baseline;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 102px;
+  }
+}
+
+.about-us {
+  @media (min-width: @tablet-width) {
+    max-width: 255px;
+  }
+}
+
+.about-us__title {
+  margin-top: 56px;
+}
+
+.about-us__title-link {
+  font-family: "Lora", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 67px;
+  color: @white;
+}
+
+.about-us__description {
+  color: @background;
+  opacity: 0.85;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.about-us__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 104px;
+  width: min-content;
+}
+
+.page-footer__section {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.page-footer__spaces {
+  margin-left: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 125px;
+  }
+}
+
+.page-footer__title {
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.page-footer__link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: @white;
+
+  &:hover,
+  &:focus {
+    color: @orange;
+  }
+}
+
+.page-footer__link--hover {
+  color: @orange;
+}
+
+.page-footer__list {
+  margin-top: 24px;
+}
+
+.page-footer__item {
+  margin-top: 9px;
+}
